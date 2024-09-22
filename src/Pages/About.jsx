@@ -1,6 +1,5 @@
 import React, { useContext } from 'react';
 import './CSS/About.css'
-import { useState,useEffect } from 'react';
 import { ShopContext } from '../Context/ShopContext';
 
 const About = () => {

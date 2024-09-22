@@ -48,10 +48,7 @@ const Navbar = () => {
                     <Link to='/women'>Women</Link>
                     {menu === "women" ? <hr /> : <></>}
                 </li>
-                {/* <li className={menu === "kids" ? "active" : ""} onClick={() => { setMenu("kids") }}>
-                    <Link to='/kids'>Kids</Link>
-                    {menu === "kids" ? <hr /> : <></>}
-                </li> */}
+          
             </ul>
             <div className="nav-login-cart">
                 <Link to='/login'><button className='log_btn'>Login</button></Link>

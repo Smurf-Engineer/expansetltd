@@ -1,11 +1,11 @@
 import React, { useContext, useState } from 'react';
 import './CSS/ShopCategory.css';
 import { ShopContext } from '../Context/ShopContext';
-import dropdown_icon from '../Components/Assets/dropdown_icon.png';
+
 import Item from '../Components/Item/Item';
 
 const ShopCategory = (props) => {
-  const { all_product, theme } = useContext(ShopContext);
+  const { all_product } = useContext(ShopContext);
   const productsPerPage = 12;
   const [page, setPage] = useState(1);
   const [sorting, setSorting] = useState('');

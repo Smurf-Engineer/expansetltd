@@ -25,21 +25,13 @@ const NewsLetter = () => {
       else {
         setMessage("");
       }
-    } else if(!regex.test(email) && email != "") {
+    } else if(!regex.test(email) && email !== "") {
       setMessage("Please enter a valid email ID");
     }
     else{
       setMessage("");
     }
   };
-
-  // const handleSubscribe = () => {
-  //   const isValid = validate();
-  //   if (isValid) {
-  //     console.log("Subscription successful!");
-  //     setEmail(""); // Clear email after successful subscription
-  //   }
-  // };
 
   const handleOnChange = (e) => {
     setEmail(e.target.value);
